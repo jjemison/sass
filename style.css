@@ -1,3 +1,65 @@
+h4 {
+  color: red; }
+
 * {
-  background-color: black;
-}
+  background-color: green; }
+
+p {
+  color: yellow;
+  font-family: Gotham; }
+
+h1 {
+  color: blue;
+  font-family: Gotham;
+  font-size: 40px; }
+
+.done-class {
+  color: yellow; }
+
+ul li {
+  list-style: none; }
+
+button, .test-button {
+  border-radius: 10px;
+  background-color: yellow;
+  color: green;
+  padding: 10px 20px;
+  border: 2px solid blue; }
+
+.test-button {
+  background-color: blue; }
+
+.box1, .box2, .box3 {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: blue; }
+
+.box4 {
+  width: 50px 50px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  background-color: yellow; }
+
+.box5 {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  background-color: yellow; }
+
+.box6 {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  background-color: yellow; }
+
+a {
+  color: pink; }
+  a:hover {
+    color: red; }
+
+/*# sourceMappingURL=style.css.map */

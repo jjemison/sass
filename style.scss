@@ -1,0 +1,102 @@
+
+// @import
+
+@import "test";
+
+//variables
+
+$base: green;
+$mainfont: yellow;
+$heading: blue;
+$font: Gotham;
+
+* {
+  background-color: $base;
+}
+p {
+  color: $mainfont;
+  font-family: $font;
+}
+
+//nesting 
+
+h1 {
+ color: $heading;
+ font: {
+   family: $font;
+   size: 40px;
+ }
+  
+}
+
+.done-class {
+  color: $mainfont;
+}
+
+ul  li {
+  list-style: none;
+}
+button {
+  border-radius: 10px;
+  background-color: $mainfont;
+  color: $base;
+  padding: 10px 20px;
+  border: 2px solid $heading;
+}
+
+.test-button {
+  @extend button; 
+  background-color: $heading;
+}
+
+//extended 
+
+%box {
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding: 20px;
+  background-color: $heading;
+}
+
+.box1 {
+  @extend %box;
+}
+.box2 {
+  @extend %box;
+}
+.box3 {
+  @extend %box;
+}
+
+// mixen
+
+@mixin box ($width: 100px, $height: 100px) {
+  width: $width;
+  height: $height;
+  margin: 20px;
+  padding: 20px;
+  background-color: $mainfont;
+}
+
+.box4 {
+  @include box(50px 50px);
+}
+
+.box5 {
+  @include box;
+}
+.box6 {
+  @include box;
+}
+
+//parent selector 
+
+a {
+  color: pink;
+  &:hover {
+    color: red;
+  }
+}
+
+
